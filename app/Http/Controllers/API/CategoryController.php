@@ -38,8 +38,8 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'cat-name' => 'required',
-            'cat-slug' => 'required',
+            'cat_name' => 'required',
+            'cat_slug' => 'required',
         ]);
 
         $category =  Category::create($request->all());
